@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+locale                   : "ko-KR"
+title                    : "이게 왜 되지?"
+title_separator          : "|"
+subtitle                 : "이게 왜 되는지 알아가는 과정을 기록합니다." # site tagline that appears below site title in masthead
+name                     : "YJ PARK"
+description              : "An amazing back-end developer beginner."
 url                      : # the base hostname & protocol for your site e.g. "https://YunjuParkKR.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -102,20 +102,20 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
-# Site Author
+# Site Author # 사이트 왼쪽 부분에 표시될 나의 프로필 같은 것...
 author:
-  name             : "Your Name"
+  name             : "YJ PARK"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "I am an **amazing** back-end developer. 👨‍💻"
+  location         : "Somewhere in South Korea 🌏"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:yunjupark0817@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://YunjuParkKR.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/YunjuParkKR"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/YunjuParkKR"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
