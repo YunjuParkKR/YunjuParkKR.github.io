@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "✨ "
+title: "☕ Java ☕ 자바 입출력 - BufferedReader "
 categories: blog
 tag: [블로그, 코딩, 자바, Java, BufferedReader, Scanner, Java.io, 입출력]
 toc: true
@@ -14,9 +14,13 @@ Java의 BufferedReader에 대하여 알아보자.
 
 
 ## BufferedReader, BufferedWriter란
+
 버퍼를 사용하여 읽기와 쓰기를 하는 함수.
+
 버퍼를 사용하는 입력은 키보드의 입력이 있을 시 한 문자씩 버퍼로 전송한 뒤, 버퍼가 가득 차거나 개행 문자가 나타나면 버퍼의 내용을 한 번에 프로그램에 전달한다. 
+
 속도가 빠르고 버퍼 사이즈가 Scanner보다 크기 때문에 많은 입력을 필요로 할 경우에 사용하면 좋다.
+
 BufferedReader는 개행문자만 경계로 인식하며, 입력받은 데이터는 String 타입이 된다.
 
 
@@ -47,6 +51,7 @@ int i = Integer.parseInt(br.readLine()); // 입력받은 내용을 int 타입으
 ```
 
 이처럼, String 타입이 아닌 다른 타입으로 입력 내용을 저장하려면 반드시 형변환을 해줘야 한다.
+
 또한, 예외처리를 반드시 필요로 한다.
 
 
@@ -56,7 +61,9 @@ int i = Integer.parseInt(br.readLine()); // 입력받은 내용을 int 타입으
 
 
 ### 데이터 가공 방법
+
 - 입력받은 데이터를 공백 단위로 나누고자 하는 경우
+
   1) StringTokenizer 사용
      ```java
      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -86,3 +93,5 @@ int i = Integer.parseInt(br.readLine()); // 입력받은 내용을 int 타입으
 ## BufferedWriter
 
 내용 추가 예정... ~~
+
+
