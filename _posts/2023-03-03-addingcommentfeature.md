@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "☕ 블로그 ☕ 깃허브 블로그 - utterances를 이용한 댓글 기능 추가 "
+title: "📝 블로그 📝 깃허브 블로그 - utterances를 이용한 댓글 기능 추가 "
 categories: blog
 tag: [블로그, 코딩, 깃허브, 깃허브블로그, 댓글, 댓글기능추가, utterances]
 toc: true
@@ -118,6 +118,9 @@ _config.yml 파일 하단의 comments: # true 부분이 문제였음.
 
 이제 진짜 끝~
 
+![image](https://user-images.githubusercontent.com/112684409/222744607-4d60e353-d24d-4c1e-aff9-9835064d6afc.png)
+
+
 
 -----------------------------------------------
 
@@ -137,8 +140,11 @@ utterances가 로드되면 깃허브의 issue search API를 사용하여 url, pa
 ## utterances의 장점
 
 - 광고가 없다
-- 댓글에 마크다운을 사용할 수 있다
-
+- 댓글에 마크다운 문법을 사용할 수 있다
+- 가볍고, 설치 및 설정이 쉽다
+- Github Issue와 맵핑 할 수 있다면 어느 곳에서든 사용할 수 있다
+- 댓글을 남기기 위해 별도 회원가입 등을 할 필요가 없다 (깃허브 계정만 있으면 된다)
+- 댓글 알림을 받을 수 있다
 
 
 
