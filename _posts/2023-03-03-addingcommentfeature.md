@@ -102,6 +102,21 @@ install 후 아래와 같은 페이지가 뜨는데,
 
 이렇게 하고 Commit and Push 하여 서버에 반영하면 댓글기능 추가가 완료된다.
 
+근데..
+
+여기까지 했는데...
+
+안 되잖아 ? ? ?
+
+_config.yml 파일 하단의 comments: # true 부분이 문제였음. 
+
+아래와 같이 # 을 지워줘야 댓글 기능이 적용된다! comments: true 가 되도록!
+
+![image](https://user-images.githubusercontent.com/112684409/222740820-58223bb2-e3f3-42b9-a584-8e2fe921da1d.png)
+
+
+
+이제 진짜 끝~
 
 
 -----------------------------------------------
