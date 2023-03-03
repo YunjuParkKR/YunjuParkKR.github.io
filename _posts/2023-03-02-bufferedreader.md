@@ -45,8 +45,8 @@ BufferedReader는 개행문자만 경계로 인식하며, 입력받은 데이터
 아래와 같이 선언하여 사용함.
 
 ```java
-BufferedFeader br = new BufferedReader(new InputStreamReader(System.in)); // 이와 같이 선언하여 사용
-String str = br.readLine(); // 입력은 readLine();이라ㅡㄴ 메소드 사용. 입력 내용을 str이라는 이름의 변수에 저장
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // 이와 같이 선언하여 사용
+String str = br.readLine(); // 입력은 readLine();이라는 메소드 사용. 입력 내용을 str이라는 이름의 변수에 저장
 int i = Integer.parseInt(br.readLine()); // 입력받은 내용을 int 타입으로 변환하고 싶을 때.
 ```
 
@@ -56,7 +56,9 @@ int i = Integer.parseInt(br.readLine()); // 입력받은 내용을 int 타입으
 
 
 ### 예외처리 방법
+
 1) readLine() 마다 try ~ catch 문으로 감싸주기
+
 2) throws IOException 사용 
 
 
