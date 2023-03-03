@@ -49,7 +49,7 @@ BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // 이
 // BufferedReader, InputStreamReader라는 두 개의 보조 스트림을 사용하여 입력 개체를 생성해준 것임
 String str = br.readLine(); // 입력은 readLine();이라는 메소드 사용. 입력 내용을 str이라는 이름의 변수에 저장
 int i = Integer.parseInt(br.readLine()); // 입력받은 내용을 int 타입으로 변환하고 싶을 때
-br.closd(); // 입력 스트림 닫기
+br.close(); // 입력 스트림 닫기
 ```
 
 이처럼, String 타입이 아닌 다른 타입으로 입력 내용을 저장하려면 반드시 형변환을 해줘야 한다.
@@ -87,7 +87,7 @@ br.closd(); // 입력 스트림 닫기
      ```java
      String arr[] = s.split(" ");
      // 입력받은 데이털르 공백 단위로 끊어 배열에 저장
-     // split() 메소드의 인자로 특정 문자를 입력하면 해당 문자를 기준으로 입력 내용을 자를 
+     // split() 메소드의 인자로 특정 문자를 입력하면 해당 문자를 기준으로 입력 내용을 자를 수 있음
      ```
 
 
