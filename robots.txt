@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Disallow: /private/
+Sitemap: http://YunjuParkKR.github.io/sitemap.xml
