@@ -129,9 +129,9 @@ _config.yml 파일 하단의 comments: # true 부분이 문제였음.
 
 utterances는 깃허브 이슈를 기반으로 댓글을 달 수 있게 해주는 깃허브 앱.
 
-utterances가 로드되면 깃허브의 issue search API를 사용하여 url, pathname, title을 기준으로 페이지와 관련된 이슈를 찾는다. 
+utterances가 로드되면, 깃허브의 issue search API를 사용하여 url, pathname, title을 기준으로 페이지(글)와 관련된 이슈를 찾아 (만약 페이지와 일치하는 이슈가 없는 경우 utterances-bot이 자동으로 이슈를 생성함), 
 
-만약 페이지와 일치하는 이슈가 없는 경우 utterances-bot이 자동으로 이슈를 생성해준다.
+해당 issue에 달리는 댓글을 [Primer](https://primer.style/)를 이용하여 Github와 유사한 UI로 보여준다.
 
 깃허브 계정 로그인을 통해 댓글을 달 수 있으며, 댓글이 달리면 Github Repository의 Issue로 알림이 오는 시스템이다.
 
