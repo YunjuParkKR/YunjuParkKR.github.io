@@ -43,7 +43,7 @@ VirtualBox는 본래 이노텍이 개발했고, 2008년에 썬 마이크로시�
 
 아래 주소로 접속 혹은 검색포털에서 VirtualBox 검색 후 다운로드 페이지로 접속하고
 
-https://www.virtualbox.org/wiki/Downloads
+<https://www.virtualbox.org/wiki/Downloads>
 
 각자 컴퓨터에 맞는 설치파일을 클릭하여 다운로드 받는다. 
 
@@ -106,8 +106,8 @@ Install 클릭.
 
 👨‍🏫 참고자료
 
-- https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EB%A8%B8%EC%8B%A0
-- https://ko.wikipedia.org/wiki/%EB%B2%84%EC%B6%94%EC%96%BC%EB%B0%95%EC%8A%A4
+- <https://ko.wikipedia.org/wiki/%EA%B0%80%EC%83%81_%EB%A8%B8%EC%8B%A0>
+- <https://ko.wikipedia.org/wiki/%EB%B2%84%EC%B6%94%EC%96%BC%EB%B0%95%EC%8A%A4>
 
 
 🙂 내용 중 잘못된 부분이 있을 경우 알려주시면 감사 드리겠습니다. 
