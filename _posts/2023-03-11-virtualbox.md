@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "🖥 가상머신 🖥 VirtualBox - Oracle VirtualBox 설치방법 "
+title: "🖥 가상머신 🖥 VirtualBox - Oracle VirtualBox의 개념과 설치방법 "
 categories: OS
 tag: [블로그, 코딩, 깃허브, 깃허브블로그, 포스트, 운영체제, OS, 가상머신, virtualbox]
 toc: true
@@ -9,21 +9,34 @@ toc_label: 목차
 published: true
 ---
 
-**[가상머신]** VirtualBox
+**[가상머신]** VirtualBox의 개념과 설치방법
 
-가상머신이란
+가상머신(virtual machine, VM)이란, 컴퓨팅 환경을 소프트웨어로 구현한 것, 즉 컴퓨터 시스템을 가상현실화하는 소프트웨어라고 한다.
 
-가상머신에 대해 알아보고 설치해보자.
+이번 포스트에서는 가상화 소프트웨어에 대해 간략히 알아보고, VirtualBox를 설치해볼 것이다.
 
 
 
-## VirtualBox
+## 운영체제 가상화 소프트웨어와 VirtualBox
+
+### 가상화 소프트웨어
+
+컴퓨터 운영체제를 가상환경에서 실행할 수 있도록 만들어주는 프로그램을 가상화 소프트웨어라고 한다.
+
+운영체제 가상화 소프트웨어에는 Oracle의 VirtualBox, VMWare의 Workstation, Microsoft의 VirtualPC 등이 있는데, 
+
+Workstation과 VirtualPC는 상용 소프트웨어인 반면, VirtualBox는 오픈소스 버전이다.
+
+VirtualBox가 Workstation, VirtualPC에 비해 기능이 부족한 편이지만, 원격 데스크톱 프로토콜, iSCSI 등 원격으로 가상 컴퓨터를 제어하는 기능을 제공한다고 한다.
+
 
 ### VirtualBox란?
 
-컴퓨터 운영체제의 한 갈래로, 오픈소스 운영체제이다. 
+Oracle사에서 운영하는 가상화 소프트웨어로, Oracle VM VirtualBox를 말한다.
 
-즉, 리눅스는 개인이 변형하여 사용하거나 심지어는 변형한 것을 배포 또는 상업적으로 이용하는 것까지 가능한 운영체제다.
+VirtualBox는 본래 이노텍이 개발했고, 2008년에 썬 마이크로시스템즈가 이노텍을 인수한 다음, 2009년 오라클이 썬 마이크로시스템즈를 인수함에 따라 
+
+현재는 Oracle에서 운영하게 된 것이라고 다.
 
 
 ### VirtualBox 설치방법 (7.0.6버전)
