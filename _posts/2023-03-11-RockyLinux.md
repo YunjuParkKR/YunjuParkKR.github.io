@@ -16,6 +16,7 @@ published: true
 나의 설치환경은 Windows10, Oracle VirtualBox 이다.
 
 🔻 VirtualBox 설치방법
+
 <https://yunjuparkkr.github.io/os/virtualbox/>
 
 
@@ -115,83 +116,135 @@ minimal은 CLI(서버용으로 만들어진 가벼운 버전으로 그래픽인�
 
 2. VirtualBox를 실행하여 가상머신(Virtual Machine, VM) 생성
 
-VirtualBox에서 새로만들기를 클릭하여 새로운 VM 생성
+<details>
+  <summary>🤦‍♀️ 첫 번째 실패 기록</summary>
 
-![image](https://user-images.githubusercontent.com/112684409/224488813-b55cafec-50d5-47e0-aadd-3b92d360bb86.png)
+  VirtualBox에서 새로만들기를 클릭하여 새로운 VM 생성
 
-
-먼저 Name and Operating System 탭.
-
-새로 생성할 가상머신의 이름을 지정해준다. 나는 RockyLinux라고 지었다. (띄어쓰기는 없애줌)
-
-![image](https://user-images.githubusercontent.com/112684409/224489211-d490237e-1875-4ee5-9d45-0f232760702b.png)
-
-Folder는 기본으로 설정되어있는 곳으로 진행했고,
-
-내가 예전에 써봤던 VirtualBox와 버전이 달라서 그런지는 모르겠는데, 그 때는 지금 단계에서 ISO image를 선택하는 게 아니라, 가상머신을 생성한 후에 Configure 메뉴에서 따로 설정해줬던 것 같은데,
-
-지금 사용하는 최신 버전의 VirtualBox(v.7.0.6)에서는 ISO image를 선택하는 란이 여기에 바로 있어서, 
-
-위에서 다운로드 받았던 Rocky Linux 의 minimal 버전 iso파일을 한번 선택해보았다.
-
-![image](https://user-images.githubusercontent.com/112684409/224489347-037dcf56-ba1f-458c-9e9d-215a182b9a74.png)
+  ![image](https://user-images.githubusercontent.com/112684409/224488813-b55cafec-50d5-47e0-aadd-3b92d360bb86.png)
 
 
-![image](https://user-images.githubusercontent.com/112684409/224490026-92114b0b-922c-43c3-ab2f-d0f16752b75d.png)
+  먼저 Name and Operating System 탭.
 
-Rocky Linux iso 파일을 선택하고 나면 자동으로 종류가 Linux로, 버전이 Red Hat (64-bit)로 설정된다.
+  새로 생성할 가상머신의 이름을 지정해준다. 나는 RockyLinux라고 지었다. (띄어쓰기는 없애줌)
 
-Rocky Linux도 RedHat(RedHat Enterprise Linux, 이하 RHEL)을 기반으로 만들어졌기 때문에 RedHat으로 선택해도 무방한가보다. 
+  ![image](https://user-images.githubusercontent.com/112684409/224489211-d490237e-1875-4ee5-9d45-0f232760702b.png)
 
-(예전에 사용했던 VirtualBox에서는 리눅스 이름을 Rocky Linux로 설정하면 자동으로 가상머신의 버전이 Linux 2.6 / 3.x / 4.x / 5.x (64-bit)로 설정되었는데, 이번엔 Red Hat으로 자동설정되네?)
+  Folder는 기본으로 설정되어있는 곳으로 진행했고,
 
+  내가 예전에 써봤던 VirtualBox와 버전이 달라서 그런지는 모르겠는데, 그 때는 지금 단계에서 ISO image를 선택하는 게 아니라, 가상머신을 생성한 후에 Configure 메뉴에서 따로 설정해줬던 것 같은데,
 
-다음으로 Unattended Install 탭.
+  지금 사용하는 최신 버전의 VirtualBox(v.7.0.6)에서는 ISO image를 선택하는 란이 여기에 바로 있어서, 
 
-![image](https://user-images.githubusercontent.com/112684409/224489536-b5d7530a-409d-41e6-9a40-c74b9fdf083b.png)
+  위에서 다운로드 받았던 Rocky Linux 의 minimal 버전 iso파일을 한번 선택해보았다.
 
-기본으로 위 사진과 같이 입력되어 있는데, 나는 Username과 Password를 바꿔줬다.
-
-![image](https://user-images.githubusercontent.com/112684409/224490073-6c328826-ca06-4a1e-b8d7-1c2f67df4331.png)
-
-
-다음으로 Hardware 탭.
-
-![image](https://user-images.githubusercontent.com/112684409/224489675-7cf5c597-1b23-4e44-a5e8-c41edad81d30.png)
-
-기본적으로 위 사진과 같이 입력되어 있는데, 나는 기본 메모리는 그대로 2048MB로 뒀고, Processors는 CPU 2개로 수정해주었다.
-
-![image](https://user-images.githubusercontent.com/112684409/224490148-afa6420d-acd9-4840-a052-91fe920c5a77.png)
+  ![image](https://user-images.githubusercontent.com/112684409/224489347-037dcf56-ba1f-458c-9e9d-215a182b9a74.png)
 
 
-다음으로 Hard Disk 탭.
+  ![image](https://user-images.githubusercontent.com/112684409/224490026-92114b0b-922c-43c3-ab2f-d0f16752b75d.png)
 
-![image](https://user-images.githubusercontent.com/112684409/224489778-c77d5732-92ea-4e26-9055-b988d82fcba4.png)
+  Rocky Linux iso 파일을 선택하고 나면 자동으로 종류가 Linux로, 버전이 Red Hat (64-bit)로 설정된다.
 
-기본적으로 위 사진과 같이 입력되어 있는데, 나는 Create a Virtual Hard Disk Now 선택과 Hard Disk File Location은 그대로 두고, Size만 50GB로 늘려주었다.
+  Rocky Linux도 RedHat(RedHat Enterprise Linux, 이하 RHEL)을 기반으로 만들어졌기 때문에 RedHat으로 선택해도 무방한가보다. 
 
-또, Hard Disk File Type을 VHD(가상 하드 디스크)로 변경했고, 고정 크기로 만들기 위해 Pre-allocate Full Size에 체크해주었다.
-
-![image](https://user-images.githubusercontent.com/112684409/224490137-14b501ad-a327-43eb-9363-774e9ab93dff.png)
+  (예전에 사용했던 VirtualBox에서는 리눅스 이름을 Rocky Linux로 설정하면 자동으로 가상머신의 버전이 Linux 2.6 / 3.x / 4.x / 5.x (64-bit)로 설정되었는데, 이번엔 Red Hat으로 자동설정되네?)
 
 
+  다음으로 Unattended Install 탭.
 
-참고로, 하단의 가이드 모드 버튼을 누르면 아래와 같이 각 탭의 내용을 단계별로 설정할 수 있도록 바뀐다.
+  ![image](https://user-images.githubusercontent.com/112684409/224489536-b5d7530a-409d-41e6-9a40-c74b9fdf083b.png)
 
-![image](https://user-images.githubusercontent.com/112684409/224490215-b8c82e68-44ba-45b0-a70b-79d32fa48f25.png)
+  기본으로 위 사진과 같이 입력되어 있는데, 나는 Username과 Password를 바꿔줬다.
 
-단계별로 설정 후 내용을 요약해서 보여준다.
-
-![image](https://user-images.githubusercontent.com/112684409/224490445-9fb19de7-8d11-4622-8325-47a691aaa0c4.png)
-
-
-zz 근데 에러남.. 역시 한 번에 잘 될 리가 없지~
-
-에러 원인은 디스크 용량 부족인 듯하다. ^^ ........
-
-![image](https://user-images.githubusercontent.com/112684409/224490830-f9853241-1fbf-4127-aef0-a86ac171b0aa.png)
+  ![image](https://user-images.githubusercontent.com/112684409/224490073-6c328826-ca06-4a1e-b8d7-1c2f67df4331.png)
 
 
+  다음으로 Hardware 탭.
+
+  ![image](https://user-images.githubusercontent.com/112684409/224489675-7cf5c597-1b23-4e44-a5e8-c41edad81d30.png)
+
+  기본적으로 위 사진과 같이 입력되어 있는데, 나는 기본 메모리는 그대로 2048MB로 뒀고, Processors는 CPU 2개로 수정해주었다.
+
+  ![image](https://user-images.githubusercontent.com/112684409/224490148-afa6420d-acd9-4840-a052-91fe920c5a77.png)
+
+
+  다음으로 Hard Disk 탭.
+
+  ![image](https://user-images.githubusercontent.com/112684409/224489778-c77d5732-92ea-4e26-9055-b988d82fcba4.png)
+
+  기본적으로 위 사진과 같이 입력되어 있는데, 나는 Create a Virtual Hard Disk Now 선택과 Hard Disk File Location은 그대로 두고, Size만 50GB로 늘려주었다.
+
+  또, Hard Disk File Type을 VHD(가상 하드 디스크)로 변경했고, 고정 크기로 만들기 위해 Pre-allocate Full Size에 체크해주었다.
+
+  ![image](https://user-images.githubusercontent.com/112684409/224490137-14b501ad-a327-43eb-9363-774e9ab93dff.png)
+
+
+
+  참고로, 하단의 가이드 모드 버튼을 누르면 아래와 같이 각 탭의 내용을 단계별로 설정할 수 있도록 바뀐다.
+
+  ![image](https://user-images.githubusercontent.com/112684409/224490215-b8c82e68-44ba-45b0-a70b-79d32fa48f25.png)
+
+  단계별로 설정 후 내용을 요약해서 보여준다.
+
+  ![image](https://user-images.githubusercontent.com/112684409/224490445-9fb19de7-8d11-4622-8325-47a691aaa0c4.png)
+
+
+  zz 근데 에러남.. 역시 한 번에 잘 될 리가 없지~
+
+  에러 원인은 디스크 용량 부족인 듯하다. ^^ ........
+
+  ![image](https://user-images.githubusercontent.com/112684409/224490830-f9853241-1fbf-4127-aef0-a86ac171b0aa.png)
+  
+</details>
+
+
+VirtualBox에서 새로만들기를 클릭하여 새로운 VM 생성 (VirtualBox 설치 후 자동으로 생겼던 CentOS8은 삭제해준 상태에서 진행)
+
+![image](https://user-images.githubusercontent.com/112684409/224531671-06097555-b459-4c9c-8c29-263287bc16fb.png)
+
+이름에 RockyLinux라고 입력, Folder는 기본 설정 그대로 두고, ISO image는 위에서 다운로드 받았던 Rocky Linux minimal버전 iso 파일을 선택해봤다.
+
+그러면 Edition, 종류, 버전은 RedHat(64-bit)로 자동 지정되고, 변경할 수 없도록 된다. 다음 버튼을 클릭.
+
+![image](https://user-images.githubusercontent.com/112684409/224531752-ad6afa0f-6f39-4aef-8afc-124b1429cae4.png)
+
+다음 단계. 아래 내용은 기본적으로 입력되어 있는 내용인데,
+
+![image](https://user-images.githubusercontent.com/112684409/224531793-288a37b1-c443-43ff-b962-4b39f8d7af22.png)
+
+나는 Username, Password, Repeat Password 부분만 아래와 같이 변경해줬다.
+
+![image](https://user-images.githubusercontent.com/112684409/224531819-f5466cf5-14e5-47b7-b62b-66c0cda39817.png)
+
+다음은 RAM과 CPU 설정 부분인데, 
+
+![image](https://user-images.githubusercontent.com/112684409/224531853-b2a93231-8742-42f0-a1ae-35a14d5304ec.png)
+
+나는 RAM은 기본 설정 2048MB로 그대로 두고, CPU는 2개로 변경해줬다.
+
+![image](https://user-images.githubusercontent.com/112684409/224531891-8395e8a8-1a97-40a5-b23c-36f6f102c6be.png)
+
+다음은 가상 하드디스크를 설정하는 부분인데, 
+
+![image](https://user-images.githubusercontent.com/112684409/224531930-405411b0-d9e1-4b6a-93e2-c50a2ba87187.png)
+
+나는 Create a Virtual Hard Disk Now 선택은 그대로 두고, Disk Size는 40GB로 수정, Pre-allocate Full Size에 체크해주었다.
+
+![image](https://user-images.githubusercontent.com/112684409/224531972-1fc6923a-ae19-4a5d-becb-bfe6b44db24b.png)
+
+다음을 클릭하면 지금까지의 설정 내용을 보여준다. Finish를 클릭.
+
+![image](https://user-images.githubusercontent.com/112684409/224531992-b2a5f2a1-1403-4efe-9476-31cd4937d481.png)
+
+그러면 가상 머신 생성이 시작된다.
+
+![image](https://user-images.githubusercontent.com/112684409/224532019-ecc8d190-682e-4b23-8712-4cdacf19169b.png)
+
+음... 생각보다 오래걸리네..~? ^^... 
+
+
+<br/>
+<br/>
 
 
 음 근데 개인적으로 VirtualBox 예전 버전보다 최신 버전이 그래픽이 더 옛스러운(?) 느낌이 나는 것 같다... 😂
