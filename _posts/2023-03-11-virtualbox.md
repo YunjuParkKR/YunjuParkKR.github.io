@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "🖥 가상머신 🖥 VirtualBox - Oracle VirtualBox의 개념과 설치방법 "
+title: "💻 가상머신 💻 VirtualBox - Oracle VirtualBox의 개념과 설치방법 "
 categories: OS
 tag: [블로그, 코딩, 깃허브, 깃허브블로그, 포스트, 운영체제, OS, 가상머신, virtualbox]
 toc: true
