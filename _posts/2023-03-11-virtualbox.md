@@ -96,6 +96,11 @@ Install 클릭.
 
 왜 있는지 잘 모르겠다. 
 
+나는 그냥 없애버림. 화면 좌측 해당 가상머신에서 마우스 오른쪽 클릭 후 삭제를 누르면 삭제된다.
+
+![image](https://user-images.githubusercontent.com/112684409/224530796-15d40d7d-a86d-4a6a-9b9a-05499eac2070.png)
+
+
 
 아무튼, 나는 CentOS가 아닌 Rocky Linux를 설치해보려고 한다. 
 
