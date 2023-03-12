@@ -266,6 +266,11 @@ VirtualBox에서 새로만들기를 클릭하여 새로운 VM 생성 (VirtualBox
 
 ![image](https://user-images.githubusercontent.com/112684409/224532861-2ee45c60-ba40-45e6-822a-60f5aff3dd7b.png)
 
+마우스 오른쪽 버튼 > 삭제 > 모든 파일 지우기 ^^
+
+![image](https://user-images.githubusercontent.com/112684409/224532919-38793527-a9de-4925-bf4d-9f974b1df352.png)
+
+
 
 ㅠㅠ 나중에 재시도 할 예정...
 
