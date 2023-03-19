@@ -20,7 +20,7 @@ title                    : "이게 왜 되지?"
 title_separator          : "|"
 subtitle                 : "이게 왜 되는지 알아가는 과정을 기록합니다." # site tagline that appears below site title in masthead
 name                     : "YJ PARK"
-description              : "An amazing back-end developer beginner."
+description              : "An amazing developer."
 url                      : "https://YunjuParkKR.github.io" # the base hostname & protocol for your site e.g. "https://YunjuParkKR.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "YunjuParkKR/YunjuParkKR.github.io.comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "YJ PARK"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** back-end developer. 🌱👨‍💻✨"
+  bio              : "I am an **amazing** developer. 🌱👨‍💻✨"
   location         : "Somewhere in South Korea 🌏"
   email            :
   links:
