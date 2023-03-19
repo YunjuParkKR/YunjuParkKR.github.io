@@ -261,6 +261,27 @@ esc를 눌러 편집모드에서 빠져나오고
 :q 를 눌러 편집기를 종료한다.
 
 
+그런데 아파치를 실행하려 하니 에러가 났다.
+
+Syntax error인데, httpd.conf 에서 Require 라는 커맨드를 모른다는 오류가 발생했다.
+
+분명 나는 아파치 2.4대 버전으로 설치했고, Require 라고 써주는 게 맞는데 왜?????
+
+검색으로도 해결이 잘 안돼서 ChatGPT 한테 물어봤다. 😭
+
+httpd.conf 파일에 LoadModule authz_core_module modules/mod_authz_core.so 를 추가해주라고 해서 아래와 같이 추가함.
+
+![image](https://user-images.githubusercontent.com/112684409/226164122-54a32ab8-c438-4e27-af49-e49e6774142e.png)
+
+이번에는 다른 오류 발생. no listening sockets available
+
+![image](https://user-images.githubusercontent.com/112684409/226164130-983087b2-a62d-4df8-ae4b-50d945b137c6.png)
+
+ps -ef | grep httpd 를 입력하여 프로세스를 확인해봤다
+
+
+
+
 
 ### 4. 아파치 실행
 
@@ -318,7 +339,7 @@ curl localhost
 
 - [LAMP 스택이란 무엇인가요?](https://aws.amazon.com/ko/what-is/lamp-stack/)
 - [위키백과 - LAMP](https://ko.wikipedia.org/wiki/LAMP_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EB%B2%88%EB%93%A4))
-- <>
+- [아파치 2.4버전 access control과 syntax](https://joungkyun.gitbook.io/annyung-3-user-guide/chapter3/chapter3-5-web-acl/chapter3-5-web-acl-apache)
 - <http://mirror.apache-kr.org/>
 - <https://sourceforge.net/projects/pcre/files/pcre/8.45/>
 - <>
